@@ -1,0 +1,47 @@
+.banner {
+    // background: url() position/bg-size bg-repeat
+    background: url("../img/udemy-logo-semi-transparent.svg") 0/30% no-repeat, 
+                linear-gradient(61deg, $color-purple-0, $color-blue-1 41%);
+    background-blend-mode: overlay;
+    height: 325px;
+    text-align: center;
+    // display: flex;
+    // align-items: center;
+    position: relative;
+    .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    h2 {
+        @include styleText($color-white-0, $fs-4, $fw-0);
+    }
+    p {
+        color: $color-white-0;
+        margin-bottom: 0;
+    }
+    button {
+        margin: $mg-3 0;
+    }
+    .row {
+        .col-6 {
+            &:first-child {
+                text-align: right;
+                .google__btn {
+                    margin: 0;
+                    border-color: transparent;
+                    border-radius: 10px;
+                }
+            }
+            &:last-child {
+                text-align: left;
+                .apple__btn {
+                    margin: 0;
+                    border-color: transparent;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}

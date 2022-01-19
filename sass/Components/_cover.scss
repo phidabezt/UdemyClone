@@ -1,0 +1,24 @@
+.cover {
+    background-image: url(../img/cover.jpg);
+    // background-image: url("file:///D:/My_Studying/FRONT-END/SASS/elearning/img/cover.jpg");
+    height: 500px;
+    @extend %backgroundImg;
+    position: relative;
+    .cover__content {
+        max-width: 500px;
+        position: absolute;
+        top: 50%;
+        left: 12%;
+        transform: translateY(-50%);
+        h1 {
+            @include styleText($color-white-0, $fs-2, $fw-1);
+        }
+        p {
+            @include styleText($color-white-0, $fs-3, $fw-0);
+        }
+        .cover__form {
+            @include styleFormSearch($color-white-0, $color-white-0, $color-white-0)
+        }
+    }
+}
+
