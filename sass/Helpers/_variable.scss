@@ -1,6 +1,7 @@
 // color
 $color-black-0: #29303b;
 $color-black-1: rgba(20, 23, 28, 0.1);
+$color-black-2: rgba(20, 23, 28, 0.5);
 $color-white-0: #fff;
 $color-black-light: #505763;
 $color-white-screen: #f2f3f5;
@@ -55,6 +56,7 @@ $border-radius: 2px;
 
 // break points
 $breakpoints: (
+    'screen-1': 1350px,
     'extra-large': 1200px,
     'large': 992px,
     'medium': 768px,

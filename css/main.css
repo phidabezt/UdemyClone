@@ -204,7 +204,7 @@ body {
 }
 
 .myNavBar .myNavBar__right .navbar-nav .nav-item .overlay::before {
-  content: '';
+  content: "";
   width: 15px;
   height: 15px;
   background-color: #fff;
@@ -229,8 +229,71 @@ body {
   font-size: 20px;
 }
 
+.myNavBar .myNavBar__right .navbar-nav .myNavBar__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .myNavBar .myNavBar__right .navbar-nav .myNavBar__buttons:hover {
   background-color: transparent;
+}
+
+.myNavBar .myNavBar__right .navbar-nav .myNavBar__buttons .button--white {
+  margin-right: 5px;
+}
+
+.myNavBar .myNavBar__right .navbar-nav .myNavBar__buttons .button {
+  white-space: nowrap;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1355px) {
+  .myNavBar .myNavBar__right .navbar-nav .nav-item {
+    white-space: nowrap;
+    text-align: center;
+  }
+  .myNavBar .myNavBar__right .navbar-nav .nav-item .nav-link {
+    font-size: 12px;
+  }
+  .myNavBar .myNavBar__right .navbar-nav .nav-item .overlay {
+    white-space: normal;
+  }
+  .myNavBar .myNavBar--reset {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .myNavBar .business,
+  .myNavBar .instructor {
+    display: none;
+  }
+  .myNavBar .myNavBar__right .navbar-nav {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .myNavBar {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .myNavBar .myNavBar__left .myNavBar__categories,
+  .myNavBar .myNavBar__left .myNavBar__form-search {
+    display: none;
+  }
+  .myNavBar .myNavBar__right {
+    width: 50%;
+    margin-right: 0 !important;
+    margin-left: auto;
+  }
+  .myNavBar .myNavBar__right .navbar-nav {
+    text-align: center;
+  }
+  .myNavBar .myNavBar__right .navbar-nav .myNavBar__buttons {
+    display: none;
+  }
 }
 
 footer {
@@ -245,7 +308,7 @@ footer .footer__top {
 }
 
 footer .footer__top ul {
-  height: 110px;
+  height: 90px;
 }
 
 footer .footer__top ul .nav-item {
@@ -344,6 +407,18 @@ footer .footer__bottom .nav-link {
   font-weight: normal;
 }
 
+@media screen and (max-width: 1200px) {
+  .intro .intro__content .intro__icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .intro {
+    display: none;
+  }
+}
+
 .courses {
   margin: 25px 0;
 }
@@ -397,6 +472,21 @@ footer .footer__bottom .nav-link {
   border-bottom: 5px solid #007791;
 }
 
+@media screen and (max-width: 1350px) {
+  .courses .courses__content .card .card-body .card-title {
+    color: #29303b;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .courses .courses__content .courses__left {
+    padding: 20px;
+  }
+}
+
 .viewing {
   padding: 22px 0;
 }
@@ -408,6 +498,15 @@ footer .footer__bottom .nav-link {
 
 .viewing .viewing__content h2 {
   font-size: 18px;
+}
+
+@media screen and (max-width: 1350px) {
+  .viewing .viewing__content .card .card-body .card-title {
+    color: #29303b;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
 }
 
 .banner {
@@ -524,6 +623,33 @@ footer .footer__bottom .nav-link {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 1200px) {
+  .partners .partners__content {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .partners .partners__content {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .partners .partners__content {
+    width: 73%;
+  }
+  .partners .partners__content .partners__imgs {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .partners .partners__content .partners__imgs .partners__item {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
 .jobs {
   background-color: #f7f8fa;
 }
@@ -543,6 +669,12 @@ footer .footer__bottom .nav-link {
   color: #505763;
   font-size: 18px;
   font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .jobs .border-right {
+    border-right: none !important;
+  }
 }
 
 .button--white {
@@ -597,6 +729,15 @@ footer .footer__bottom .nav-link {
   background-image: url(../img/cover.jpg);
   height: 500px;
   position: relative;
+}
+
+.cover::before {
+  background-color: rgba(0, 0, 0, 0.37);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
 }
 
 .cover .cover__content {
@@ -679,6 +820,12 @@ footer .footer__bottom .nav-link {
   color: #fff;
   background-color: #ec5252;
   border-radius: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .cover .cover__content {
+    max-width: 400px;
+  }
 }
 
 .card {

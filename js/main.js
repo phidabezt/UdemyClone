@@ -8,7 +8,7 @@ function truncateCardTitle() {
     console.log(cardList);
     for(var i = 0; i < cardList.length; i++) {
         var trunc_text = cardList[i].innerHTML;
-        var new_text = truncateString(trunc_text, 36);
+        var new_text = truncateString(trunc_text, 30);
         cardList[i].innerHTML = new_text;
     }
 }

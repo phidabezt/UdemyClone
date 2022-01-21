@@ -1,9 +1,8 @@
-    // css
-    // .myNavBar .myNavBar__left{}
+// css
+// .myNavBar .myNavBar__left{}
 
 .myNavBar {
-    box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1),
-                0 3px 1px 0 rgba(20, 23, 28, 0.1);
+    box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
 
     .myNavBar__col {
         padding-left: 0;
@@ -32,8 +31,8 @@
 
         .myNavBar__form-search {
             flex-grow: 8;
-            @include styleFormSearch($color-white-screen, $color-white-0, $color-gray-4)
-        }   
+            @include styleFormSearch($color-white-screen, $color-white-0, $color-gray-4);
+        }
     }
 
     .myNavBar__right {
@@ -41,13 +40,13 @@
             justify-content: space-between;
             align-items: center;
 
-            .nav-item { 
+            .nav-item {
                 padding: $pd-2 + 2 $pd-2;
                 border-radius: $border-radius + 1;
                 position: relative;
                 .nav-link {
                     @include styleText($color-black-light, $fs-1, $fw-0);
-                }  
+                }
                 &:hover {
                     background-color: $color-gray-1;
                     .overlay {
@@ -68,7 +67,7 @@
                     border-top: 1px solid $color-gray-1;
                     box-shadow: 0 4px 16px $color-gray-5;
                     &::before {
-                        content: '';
+                        content: "";
                         width: 15px;
                         height: 15px;
                         background-color: $color-white-0;
@@ -80,7 +79,7 @@
                         right: 10%;
                         transform: rotate(45deg);
                     }
-                }   
+                }
             }
 
             .myNavBar__cart {
@@ -90,13 +89,75 @@
                 line-height: 20px;
                 .nav-link {
                     font-size: $fs-3 + 2;
-
                 }
             }
 
             .myNavBar__buttons {
+                display: flex;
                 &:hover {
                     background-color: transparent;
+                }
+                .button--white {
+                    margin-right: $mg-0;
+                }
+                .button {
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1200px) and (max-width: 1355px) {
+        .myNavBar__right {
+            .navbar-nav {
+                .nav-item {
+                    white-space: nowrap;
+                    text-align: center;
+                    .nav-link {
+                        font-size: $fs-1 - 1;
+                    }
+
+                    .overlay {
+                        white-space: normal;
+                    }
+                }
+            }
+        }
+
+        .myNavBar--reset {
+            padding-left: 0;
+        }
+    }
+
+    @include responsive("extra-large") {
+        .business,
+        .instructor {
+            display: none;
+        }
+        .myNavBar__right {
+            .navbar-nav {
+                justify-content: space-around;
+            }
+        }
+    }
+
+    @include responsive("medium") {
+        flex-wrap: nowrap;
+        .myNavBar__left {
+            .myNavBar__categories,
+            .myNavBar__form-search {
+                display: none;
+            }
+        }
+
+        .myNavBar__right {
+            width: 50%;
+            margin-right: 0!important;
+            margin-left: auto;
+            .navbar-nav {
+                text-align: center;
+                .myNavBar__buttons {
+                    display: none;
                 }
             }
         }

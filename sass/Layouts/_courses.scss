@@ -3,7 +3,7 @@
     .courses__content {
         width: 90%;
         margin: 0 auto;
-        
+
         .row {
             margin-right: 0;
             margin-left: 0;
@@ -37,5 +37,25 @@
             }
         }
     }
-}
 
+    @include responsive("screen-1") {
+        .courses__content {
+            .card {
+                .card-body {
+                    .card-title {
+                        @include styleText($color-black-0, $fs-1, $fw-1);
+                        margin-bottom: $mg-3;
+                    }
+                }
+            }
+        }
+    }
+
+    @include responsive("medium") {
+        .courses__content {
+            .courses__left {
+                padding: $pd-3; //ctrl + space = recommendation
+            }
+        }
+    }
+}

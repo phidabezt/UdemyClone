@@ -14,4 +14,10 @@
             @include styleText($color-black-light, $fs-3, $fw-1);
         }
     }
+
+    @include responsive("medium") {
+        .border-right {
+            border-right: none!important;
+        }
+    }
 }
