@@ -47,6 +47,10 @@ body {
   outline: none;
 }
 
+.owl-carousel .owl-dots button:focus {
+  outline: none !important;
+}
+
 .myNavBar {
   -webkit-box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
           box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
@@ -348,6 +352,13 @@ footer .footer__top .btn-group .button--dropup:focus {
 
 footer .footer__top .btn-group .dropdown-menu {
   font-size: 13px;
+}
+
+@media screen and (max-width: 500px) {
+  footer .footer__top ul {
+    height: 112px;
+    margin-bottom: 20px;
+  }
 }
 
 footer .footer__bottom {
@@ -825,6 +836,13 @@ footer .footer__bottom .nav-link {
 @media screen and (max-width: 768px) {
   .cover .cover__content {
     max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cover .cover__content {
+    max-width: 300px;
+    left: 10%;
   }
 }
 

@@ -35,6 +35,13 @@ footer {
                 font-size: $fs-1;
             }
         }
+
+        @include responsive("extra-small") {
+            ul {
+                height: 112px;
+                margin-bottom: 20px;
+            }
+        }
     }
 
     .footer__bottom {
