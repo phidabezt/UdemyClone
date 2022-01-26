@@ -11,6 +11,7 @@
             font-size: $fs-3;
             border: 1px solid $color-black-1;
             margin-bottom: $mg-3 + 5;
+            cursor: pointer;
             &:hover {
                 box-shadow: 0 0 1px $color-black-1,
                             0 3px 1px 0 $color-black-1;

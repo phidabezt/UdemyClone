@@ -13,13 +13,14 @@
             i {
                 @include styleText($color-yellow-0, $fs-1 - 1, $fw-3);
             }
+            .card__rate {
+                @include styleText($color-gray-0, $fs-1, $fw-1);
+            }
+            .card__total {
+                @include styleText($color-gray-0, $fs-1, $fw-0);
+            }
         }
-        .card__rate {
-            @include styleText($color-gray-0, $fs-1, $fw-1);
-        }
-        .card__total {
-            @include styleText($color-gray-0, $fs-1, $fw-0);
-        }
+
         .card__price {
             text-align: right;
             padding: $pd-2 + 2 0;

@@ -6,6 +6,12 @@
         h2 {
             font-size: $fs-3;
         }
+        .owl-carousel .owl-nav button.owl-prev {
+            left: -2%;
+        }
+        .owl-carousel .owl-nav button.owl-next {
+            right: -2%;
+        }
     }
 
     @include responsive("screen-1") {

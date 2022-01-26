@@ -97,6 +97,12 @@
                 line-height: 20px;
                 .nav-link {
                     font-size: $fs-3 + 2;
+                    i {
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-52%, -50%);
+                    }
                 }
             }
 

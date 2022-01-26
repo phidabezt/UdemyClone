@@ -7,6 +7,11 @@
             font-size: $fs-5;
             margin-bottom: $mg-2;
         }
-        
+    }
+    .owl-carousel .owl-nav button.owl-prev {
+        left: -2%;
+    }
+    .owl-carousel .owl-nav button.owl-next {
+        right: -2%;
     }
 }
