@@ -18,6 +18,13 @@
             img {
                 width: 110px;
             }
+            .logo-black {
+                display: inline-block;
+            }
+
+            .logo-white {
+                display: none;
+            }
         }
         .myNavBar__categories {
             flex-grow: 1;
@@ -31,8 +38,9 @@
 
         .myNavBar__form-search {
             flex-grow: 8;
-            @include styleFormSearch($color-white-screen, $color-white-0, $color-gray-4);
+            @include styleFormSearch($color-white-screen, $color-white-0, $color-gray-4, $color-black-light);
         }
+
     }
 
     .myNavBar__right {

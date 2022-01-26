@@ -20,6 +20,7 @@
 @import './Layouts/students';
 @import './Layouts/partners';
 @import './Layouts/job';
+@import './Layouts/sidebarMini';
 
 // Components
 @import './Components/button';
@@ -30,3 +31,7 @@
 @import './Pages/home';
 
 //Theme
+
+@import './Theme/dark/resetDark';
+@import './Theme/dark/sidebarMiniDark';
+@import './Theme/dark/headerDark';

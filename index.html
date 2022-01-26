@@ -25,7 +25,25 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
-<body>
+<body class="darkMode">
+
+    <!-- SIDEBAR MINI -->
+    <div class="sidebarMini">
+        <button class="sidebarMini__button">
+            <i class="fa fa-moon"></i>
+        </button>
+        <div class="sidebarMini__content">
+            <h2>Dark Mode</h2>
+            <div class="d-flex">
+                <span>Off</span>
+                <label class="switch" for="checkbox">
+                    <input type="checkbox" name="" id="checkbox">
+                    <div class="slider"></div>
+                </label>
+                <span>On</span>
+            </div>
+        </div>
+    </div>
 
     <!-- HEADER -->
     <header>
@@ -57,7 +75,8 @@
             <div class="col-6 col-sm-8 col-md-8 col-lg-9 col-xl-7 myNavBar__col">
                 <div class="myNavBar__left">
                     <a class="navbar-brand" href="#">
-                        <img src="./img/logo-coral.svg" alt="logo">
+                        <img class="logo-black" src="./img/logo-coral.svg" alt="logo black">
+                        <img class="logo-white" src="./img/logo-coral-white.svg" alt="logo white">
                     </a>
                     <div class="myNavBar__categories">
                         <i class="fa fa-th"></i>
