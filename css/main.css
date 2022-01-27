@@ -299,6 +299,38 @@ body {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
+  .myNavBar #udemyNavBar {
+    position: fixed;
+    z-index: 50;
+    inset: 0 20% 0 0;
+    padding: 7rem 4rem;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    background: rgba(0, 0, 0, 0.75);
+    -webkit-backdrop-filter: blur(2rem);
+            backdrop-filter: blur(2rem);
+    text-align: center;
+  }
+  .myNavBar #udemyNavBar .nav-item .nav-link {
+    color: #f7f8fa;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .myNavBar #udemyNavBar #checkboxNavBar {
+    display: none;
+  }
+  .myNavBar #udemyNavBar .closeNavBar {
+    color: #fff;
+    font-size: 36px;
+    position: absolute;
+    top: 2%;
+    right: 10%;
+  }
+  .myNavBar #udemyNavBar .myNavBar__buttons {
+    position: absolute;
+    bottom: 30%;
+    left: 26%;
+  }
   .myNavBar .myNavBar__left .myNavBar__categories,
   .myNavBar .myNavBar__left .myNavBar__form-search {
     display: none;
@@ -506,6 +538,22 @@ footer .footer__bottom .nav-link {
   border: none;
   color: #007791;
   border-bottom: 5px solid #007791;
+}
+
+@media screen and (max-width: 768px) {
+  .courses #myTab {
+    margin-top: 30px;
+  }
+  .courses #myTab li {
+    width: 25%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .courses #myTab li {
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 1350px) {
@@ -1068,6 +1116,12 @@ footer .footer__bottom .nav-link {
   color: #29303b;
   font-size: 15px;
   font-weight: normal;
+}
+
+@media screen and (max-width: 350px) {
+  .card--feedback {
+    height: 320px;
+  }
 }
 
 body.darkMode {

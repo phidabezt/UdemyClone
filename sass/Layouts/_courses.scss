@@ -37,6 +37,20 @@
                 border-bottom: 5px solid $color-blue-0;
             }
         }
+
+        @include responsive('medium') {
+            margin-top: 30px;
+            li {
+                width: 25%;
+                text-align: center;
+            }
+        }
+
+        @include responsive('small') {
+            li {
+                width: 50%;
+            }
+        }
     }
 
     @include responsive("screen-1") {

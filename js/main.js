@@ -32,3 +32,10 @@ toggleBtn.addEventListener("click", function(){
 switchBtn.addEventListener("click", function(){
     document.querySelector("body").classList.toggle('darkMode');
 });
+
+/* RESPONSIVE NAVBAR */
+var switchNavBar = document.querySelector("#checkboxNavBar");
+
+switchNavBar.addEventListener("click", function(){
+    document.querySelector(".navbar-collapse").classList.remove("show");
+});

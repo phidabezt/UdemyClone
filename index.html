@@ -50,11 +50,15 @@
         <nav class="myNavBar navbar navbar-expand-md navbar-light">
             <div class="col-3 col-sm-2 d-md-none">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#udemyNavBar"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    aria-controls="navbarSupportedContent">
                     <span class="navbar-toggler-icon">
                     </span>
                 </button>
                 <div class="collapse navbar-collapse" id="udemyNavBar">
+                    <label class="closeNavBar" for="checkboxNavBar">
+                        <input type="checkbox" name="" id="checkboxNavBar">
+                        <i class="fa fa-times"></i>
+                    </label>
                     <ul class="navbar-nav ml-auto">
                         <!-- ADD CONTENT HERE -->
                         <li class="nav-item active line">
@@ -68,6 +72,10 @@
                         </li>
                         <li class="nav-item line">
                             <a class="nav-link" href="#">CONTACT</a>
+                        </li>
+                        <li class="nav-item myNavBar__buttons">
+                            <button class="button button--white">Log in</button>
+                            <button class="button button--red">Sign up</button>
                         </li>
                     </ul>
                 </div>
@@ -108,7 +116,7 @@
                             <a class="nav-link" href="#">Become an Instructor</a>
                             <div class="overlay">
                                 <p>Get your team access to Udemy's top 2,500 courses anytime, anywhere.</p>
-                                <a href="#">Try Udemy for Business</a>
+                                <a href="#">Try Udemy for Instructor</a>
                             </div>
                         </li>
                         <li class="nav-item myNavBar__cart">

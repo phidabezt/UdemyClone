@@ -157,6 +157,43 @@
 
     @include responsive("medium") {
         flex-wrap: nowrap;
+
+        #udemyNavBar {
+            position: fixed;
+            z-index: 50;
+            inset: 0 20% 0 0;
+            padding: 7rem 4rem;
+            transition: all 0.5s;
+            background: $color-black-3;
+            backdrop-filter: blur(2rem);
+            text-align: center;
+            .nav-item {
+                .nav-link {
+                    color: $color-gray-6;
+                    font-size: $fs-3;
+                    line-height: $line-height-1;
+                }
+            }
+
+            #checkboxNavBar {
+                display: none;
+            }
+
+            .closeNavBar {
+                color: $color-white-0;
+                font-size: $fs-4;
+                position: absolute;
+                top: 2%;
+                right: 10%;
+            }
+
+            .myNavBar__buttons {
+                position: absolute;
+                bottom: 30%;
+                left: 26%;
+            }
+        }
+
         .myNavBar__left {
             .myNavBar__categories,
             .myNavBar__form-search {

@@ -2,6 +2,7 @@
 $color-black-0: #29303b;
 $color-black-1: rgba(20, 23, 28, 0.1);
 $color-black-2: rgba(20, 23, 28, 0.5);
+$color-black-3: hsla(0, 0%, 0%, 0.75);
 $color-white-0: #fff;
 $color-black-light: #505763;
 $color-white-screen: #f2f3f5;
@@ -47,6 +48,8 @@ $fw-3: 900;
 
 // line-height
 $line-height-0: 1.43;
+$line-height-1: 30px;
+
 
 // margin
 $mg-0: 5px;
@@ -74,4 +77,5 @@ $breakpoints: (
     'medium': 768px,
     'small': 576px,
     'extra-small': 500px,
+    'tiny': 350px,
 )
